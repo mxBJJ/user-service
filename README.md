@@ -48,3 +48,37 @@ O serviço tem como objetivo, executar as seguintes funcionalidades:
   }
   
   ```
+  
+* POST: 
+  
+  localhost:3000/login
+  
+    ` Request: `
+  
+  ```json
+  
+  {
+      "email": "string",
+      "password": "string"
+  }
+  
+  ```
+  
+    ` Response: `
+    
+    ```json
+    
+  {
+        "user": {
+          "products": [],
+          "_id": "string",
+          "name": "string",
+          "email": "string",
+          "phone": "string",
+          "createdAt": "date",
+          "__v": "number"
+        },
+        "token": "string"
+   }
+   
+   ```
