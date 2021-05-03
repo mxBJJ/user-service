@@ -26,10 +26,9 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
 
-    products: [{
-        type: Schema.Types.ObjectId,
-        ref: "Product"
-    }],
+    rating: {
+        type: Number
+    },
 
     createdAt: {
         type: Date,
