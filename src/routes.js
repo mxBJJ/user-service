@@ -4,6 +4,7 @@ const authController = require('./controller/authController')
 const router = express.Router()
 
 router.post('/cadastrar', userController.create)
+router.post('/avaliar', userController.rating)
 router.post('/login', authController.login)
 
 

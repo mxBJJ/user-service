@@ -30,6 +30,14 @@ const UserSchema = new mongoose.Schema({
         type: Number
     },
 
+    totalPoints: {
+        type: Number
+    },
+
+    totalRatings: {
+        type: Number
+    },
+
     createdAt: {
         type: Date,
         default: Date.now
