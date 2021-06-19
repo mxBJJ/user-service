@@ -56,7 +56,7 @@ module.exports = {
             const updatedUser = await User.updateOne({ _id: user_id },
                  {rating: newRating, totalRatings: total, totalPoints: points })
 
-            return res.send({ user: updatedUser })
+            return res.send({ success: true })
 
         } catch (error) {
             console.log(error)
